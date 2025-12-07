@@ -1,0 +1,1920 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title>Atlas Kargo | Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <meta name="author" content="Atlas Kargo" />
+    <link rel="icon" href="images/si-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="images/si-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+  </head>
+
+  <body>
+
+    <div class="admin-wrapper d-flex">
+
+      <!-- SIDEBAR -->
+      <aside class="admin-sidebar">
+        <div class="admin-sidebar__brand">
+          <span class="admin-logo-icon">AK</span>
+          <div>
+            <div class="admin-brand-title">Atlas Kargo</div>
+            <div class="admin-brand-sub">Yönetim Paneli</div>
+          </div>
+        </div>
+
+        <ul class="admin-nav list-unstyled">
+          <li class="admin-nav-item active" data-target="dashboard">
+            <span class="icon-home mr-2"></span> Gösterge Paneli
+          </li>
+
+          <li class="admin-nav-item" data-target="general">
+            <span class="icon-cog mr-2"></span> Genel Ayarlar
+          </li>
+
+          <li class="admin-nav-item" data-target="announcements">
+            <span class="icon-bullhorn mr-2"></span> Duyurular
+          </li>
+
+          <li class="admin-nav-item" data-target="services">
+            <span class="icon-truck mr-2"></span> Hizmetler
+          </li>
+
+          <li class="admin-nav-item" data-target="branches">
+            <span class="icon-branches mr-2"></span> Şubeler &amp; Müdürlükler
+          </li>
+
+          <li class="admin-nav-item" data-target="messages">
+            <span class="icon-envelope mr-2"></span> İletişim Mesajları
+          </li>
+
+          <li class="admin-nav-item" data-target="blog">
+            <span class="icon-book mr-2"></span> Blog Yazıları
+          </li>
+
+          <li class="admin-nav-item" data-target="mission-vision">
+            <span class="icon-lightbulb-o mr-2"></span> Misyon & Vizyon
+          </li>
+
+          <li class="admin-nav-item" data-target="team">
+            <span class="icon-users mr-2"></span> Ekibimiz
+          </li>
+
+          <li class="admin-nav-item" data-target="faq">
+            <span class="icon-question_answer mr-2"></span> SSS
+          </li>
+
+          <li class="admin-nav-item" data-target="testimonials">
+            <span class="icon-star mr-2"></span> Müşteri Yorumları
+          </li>
+        </ul>
+      </aside>
+
+      <div class="admin-overlay"></div>
+
+      <!-- MAIN CONTENT -->
+      <main class="admin-main">
+
+        <!-- Top bar -->
+        <header class="admin-topbar d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+
+            <!-- HAMBURGER -->
+            <button type="button" class="admin-menu-toggle mr-3" aria-label="Menüyü Aç / Kapat">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <h1 class="admin-page-title mb-0">Gösterge Paneli</h1>
+          </div>
+
+          <div class="admin-user">
+            <span class="icon-user mr-2"></span>
+            Admin · admin@atlaskargo.com
+          </div>
+        </header>
+
+        <div class="admin-content">
+
+          
+          <!-- DASHBOARD -->
+          <section id="panel-dashboard" class="admin-panel active">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="admin-card">
+                  <h6 class="admin-card-label">Bugün Oluşturulan Gönderi</h6>
+                  <div class="admin-card-value">1.284</div>
+                  <p class="admin-card-desc">
+                    Son 24 saat içinde sistemde oluşturulan toplam kargo kaydı.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="admin-card">
+                  <h6 class="admin-card-label">Bugün Teslim Edilen</h6>
+                  <div class="admin-card-value">1.097</div>
+                  <p class="admin-card-desc">
+                    Aktif hatlardaki gönderilerden başarıyla alıcıya ulaştırılanlar.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="admin-card">
+                  <h6 class="admin-card-label">Geciken Gönderi</h6>
+                  <div class="admin-card-value">63</div>
+                  <p class="admin-card-desc">
+                    Hedef teslim süresini aşan ve takibi gereken aktif gönderiler.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <h5 class="mb-3">Son İşlemler</h5>
+
+              <ul class="admin-activity list-unstyled mb-0">
+                <li>
+                  <span class="icon-check mr-2 text-success"></span>
+                  Yeni duyuru eklendi: <strong>Ramazan Kampanyası</strong>
+                  <small class="text-muted d-block">5 dakika önce</small>
+                </li>
+
+                <li class="mt-3">
+                  <span class="icon-edit mr-2 text-primary"></span>
+                  Şube güncellendi: <strong>Kadıköy Şubesi</strong>
+                  <small class="text-muted d-block">2 saat önce</small>
+                </li>
+
+                <li class="mt-3">
+                  <span class="icon-book mr-2 text-warning"></span>
+                  Yeni blog yazısı taslak olarak kaydedildi
+                  <small class="text-muted d-block">Dün</small>
+                </li>
+              </ul>
+            </div>
+
+          </section>
+
+
+
+          <!-- GENERAL SETTINGS -->
+          <section id="panel-general" class="admin-panel">
+            <div class="admin-card">
+              <h4>Genel Site Ayarları</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Site Başlığı (&lt;title&gt;)</label>
+                    <input type="text" class="form-control" value="Atlas Kargo | Güvenilir Kargo ve Lojistik Çözümleri">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Meta Author</label>
+                    <input type="text" class="form-control" value="Atlas Kargo">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Meta Description</label>
+                  <textarea class="form-control" rows="2">Atlas Kargo, yurtiçi ve yurtdışı güvenilir kargo ve lojistik çözümleri sunar.</textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Meta Keywords</label>
+                  <input type="text" class="form-control" value="kargo, lojistik, atlas kargo, taşımacılık, teslimat">
+                  <small class="form-text text-muted">Virgülle ayırarak yazın.</small>
+                </div>
+
+                <hr>
+
+                <h5>Top Bar Bilgileri</h5>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Top Bar E-posta</label>
+                    <input type="email" class="form-control" value="info@atlaskargo.com">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Top Bar Telefon</label>
+                    <input type="text" class="form-control" value="+90 (212) 555 55 55">
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-md admin-save-btn">Kaydet</button>
+              </form>
+            </div>
+
+            <div class="admin-card">
+              <h4>Footer Linkleri</h4>
+              <div class="table-responsive">
+                <table class="table table-sm table-borderless mb-3">
+                  <thead>
+                    <tr>
+                      <th>Metin</th>
+                      <th>URL</th>
+                      <th style="width: 60px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" class="form-control form-control-sm" value="Hakkımızda"></td>
+                      <td><input type="text" class="form-control form-control-sm" value="index.html#about-section"></td>
+                      <td><button class="btn btn-outline-danger btn-sm">Sil</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control form-control-sm" value="Hizmetler"></td>
+                      <td><input type="text" class="form-control form-control-sm" value="services.html"></td>
+                      <td><button class="btn btn-outline-danger btn-sm">Sil</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control form-control-sm" value="Şubeler"></td>
+                      <td><input type="text" class="form-control form-control-sm" value="branches.html"></td>
+                      <td><button class="btn btn-outline-danger btn-sm">Sil</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control form-control-sm" value="Blog"></td>
+                      <td><input type="text" class="form-control form-control-sm" value="index.html#blog-section"></td>
+                      <td><button class="btn btn-outline-danger btn-sm">Sil</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control form-control-sm" value="İletişim"></td>
+                      <td><input type="text" class="form-control form-control-sm" value="index.html#contact-section"></td>
+                      <td><button class="btn btn-outline-danger btn-sm">Sil</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <button class="btn btn-outline-secondary btn-sm">+ Yeni Link Ekle</button>
+            </div>
+          </section>
+
+
+
+          <!-- ANNOUNCEMENTS -->
+          <section id="panel-announcements" class="admin-panel">
+            <div class="admin-card mb-4">
+              <h4>Duyuru / Kampanya Ekle-Düzenle</h4>
+
+              <form id="announcement-form">
+                <input type="hidden" id="announcement-id">
+
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label>Başlık</label>
+                    <input type="text" id="announcement-title" class="form-control"
+                          placeholder="Örn. Ramazan Ayına Özel Kampanya">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Yayın Tarihi</label>
+                    <input type="date" id="announcement-date" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Kısa Açıklama</label>
+                  <textarea id="announcement-excerpt" class="form-control" rows="2"
+                            placeholder="Duyurunun listede görünecek kısa açıklaması"></textarea>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Buton Metni</label>
+                    <input type="text" id="announcement-button-text" class="form-control"
+                          placeholder="Detayları Gör">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Buton Linki</label>
+                    <input type="text" id="announcement-button-link" class="form-control"
+                          placeholder="Örn. announcements.html#kampanya-1">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>İçerik (Özet / Detay)</label>
+                  <textarea id="announcement-content" class="form-control" rows="4"
+                            placeholder="Duyurunun detay metni (örneğin kampanya koşulları, geçerlilik süresi vb.)"></textarea>
+                </div>
+
+                <!-- ATTACHEMENTS -->
+                <div class="admin-card mt-3 mb-3">
+                  <h5 class="mb-3">Duyuru Ekleri (PDF, Word, Görsel vb.)</h5>
+
+                  <div class="form-group mb-2">
+                    <label>Dosya Yükle</label>
+                    <input type="file" id="announcement-files" class="form-control"
+                          accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
+                    <small class="form-text text-muted">
+                      Birden fazla dosya seçebilirsiniz. Desteklenen tipler: PDF, DOC, DOCX, JPG, PNG
+                    </small>
+                  </div>
+
+                  <ul id="announcement-file-list" class="list-group mb-2"></ul>
+
+                  <button type="button" id="clear-ann-files"
+                          class="btn btn-outline-secondary btn-sm">
+                    Tüm Ekleri Temizle
+                  </button>
+                </div>
+
+                  <button type="button" class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+
+                  <button type="button" class="btn btn-secondary btn-md" id="announcement-clear-form">
+                    Formu Temizle
+                  </button>
+                
+              </form>
+            </div>
+
+            <div class="admin-card">
+              <h5>Mevcut Duyurular</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Başlık</th>
+                      <th>Tarih</th>
+                      <th>Durum</th>
+                      <th style="width: 120px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- 1 — Yeni Yıl İndirim Kampanyası -->
+                    <tr data-ann-row
+                        data-id="yeni-yil-indirim-kampanyasi"
+                        data-title="Yeni Yıl İndirim Kampanyası"
+                        data-date="2025-12-15"
+                        data-status="Aktif"
+                        data-excerpt="Yurt içi gönderilerinizde %30’a varan indirim fırsatı. 15 Aralık 2025 – 15 Ocak 2025 tarihleri arasında geçerlidir."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#yeni-yil-indirim-kampanyasi"
+                        data-content="Yurt içi gönderilerinizde %30’a varan indirim fırsatı sunuyoruz. Kampanya 15 Aralık 2025 – 15 Ocak 2025 tarihleri arasında geçerlidir. Belirlenen tarihler arasında oluşturulan tüm standart yurt içi gönderiler kampanya kapsamındadır.">
+                      <td>Yeni Yıl İndirim Kampanyası</td>
+                      <td>15.12.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 2 — Yurt Dışı Gönderilerde %20 İndirim -->
+                    <tr data-ann-row
+                        data-id="yurtdisi-20-indirim"
+                        data-title="Yurt Dışı Gönderilerde %20 İndirim"
+                        data-date="2025-12-01"
+                        data-status="Aktif"
+                        data-excerpt="Avrupa ve Orta Doğu’ya yapılan hava kargo gönderilerinde fatura tutarı üzerinden %20 indirim uygulanmaktadır."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#yurtdisi-20-indirim"
+                        data-content="Avrupa ve Orta Doğu’ya yapılan hava kargo gönderilerinizde fatura tutarı üzerinden %20 indirim uygulanmaktadır. Kampanya süresince seçili hatlarda geçerli olup, detaylı bilgi için müşteri temsilcinizle iletişime geçebilirsiniz.">
+                      <td>Yurt Dışı Gönderilerde %20 İndirim</td>
+                      <td>01.12.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 3 — E-Ticaret Firmalarına Özel Kurumsal Paket -->
+                    <tr data-ann-row
+                        data-id="eticaret-kurumsal-paket"
+                        data-title="E-Ticaret Firmalarına Özel Kurumsal Paket"
+                        data-date="2025-11-25"
+                        data-status="Aktif"
+                        data-excerpt="E-ticaret işletmeleri için avantajlı fiyatlandırma, detaylı raporlama ve özel hesap yöneticisi içeren kurumsal paketimiz devrededir."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#eticaret-kurumsal-paket"
+                        data-content="E-ticaret işletmeleri için geliştirdiğimiz kurumsal paketimiz; avantajlı fiyatlandırma, detaylı raporlama, özel hesap yöneticisi ve entegrasyon desteği sunar. Yüksek hacimli gönderilerinizde maliyetleri düşürürken operasyonel süreçleri kolaylaştırabilirsiniz.">
+                      <td>E-Ticaret Firmalarına Özel Kurumsal Paket</td>
+                      <td>25.11.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 4 — Akşam Teslimat Hizmeti Başladı -->
+                    <tr data-ann-row
+                        data-id="aksam-teslimat"
+                        data-title="Akşam Teslimat Hizmeti Başladı"
+                        data-date="2025-11-10"
+                        data-status="Aktif"
+                        data-excerpt="İstanbul, Ankara ve İzmir’de 18:00–22:00 saatleri arasında akşam teslimat hizmeti pilot olarak başlamıştır."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#aksam-teslimat"
+                        data-content="İstanbul, Ankara ve İzmir’de 18:00–22:00 saatleri arasında akşam teslimat hizmeti pilot olarak devreye alınmıştır. Bu hizmet ile alıcılar, mesai sonrası saatlerde gönderilerini teslim alabilmektedir. Pilot uygulama sonuçlarına göre kapsam genişletilecektir.">
+                      <td>Akşam Teslimat Hizmeti Başladı</td>
+                      <td>10.11.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 5 — Kargo Takip Sistemimiz Güncellendi -->
+                    <tr data-ann-row
+                        data-id="takip-sistemi-guncellendi"
+                        data-title="Kargo Takip Sistemimiz Güncellendi"
+                        data-date="2025-11-01"
+                        data-status="Aktif"
+                        data-excerpt="Yeni takip ekranımız ile gönderilerinizi harita üzerinde gerçek zamanlı görebilir, geçmiş gönderilerinize ait detaylı raporlar alabilirsiniz."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#takip-sistemi-guncellendi"
+                        data-content="Güncellenen kargo takip ekranımız sayesinde gönderilerinizi harita üzerinde gerçek zamanlı takip edebilir, geçmiş gönderilerinize ait detaylı raporlar alabilirsiniz. Kullanıcı dostu arayüz ile hem bireysel hem kurumsal kullanıcılar için takip süreci sadeleştirilmiştir.">
+                      <td>Kargo Takip Sistemimiz Güncellendi</td>
+                      <td>01.11.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 6 — Anadolu Bölgesi Dağıtım Merkezimiz Yenilendi -->
+                    <tr data-ann-row
+                        data-id="anadolu-dagitim-merkezi"
+                        data-title="Anadolu Bölgesi Dağıtım Merkezimiz Yenilendi"
+                        data-date="2025-10-15"
+                        data-status="Aktif"
+                        data-excerpt="Konya’daki yeni dağıtım merkezimizle Anadolu bölgesindeki teslimat süreleri kısaltılmış, aktarma sayısı azaltılmıştır."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#anadolu-dagitim-merkezi"
+                        data-content="Konya’daki yeni dağıtım merkezimiz ile Anadolu bölgesindeki teslimat süreleri kısaltılmış, aktarma sayısı azaltılmıştır. Böylece gönderileriniz daha az durakla ve daha kısa sürede alıcılara ulaştırılmaktadır.">
+                      <td>Anadolu Bölgesi Dağıtım Merkezimiz Yenilendi</td>
+                      <td>15.10.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 7 — Hafta Sonu Teslimat Ağı Genişletildi -->
+                    <tr data-ann-row
+                        data-id="hafta-sonu-teslimat-genisleme"
+                        data-title="Hafta Sonu Teslimat Ağı Genişletildi"
+                        data-date="2025-09-30"
+                        data-status="Aktif"
+                        data-excerpt="Hafta sonu teslimat hizmetimiz Bursa, Kocaeli, Antalya ve Gaziantep şubelerini de kapsayacak şekilde genişletilmiştir."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#hafta-sonu-teslimat-genisleme"
+                        data-content="Hafta sonu teslimat hizmetimiz Bursa, Kocaeli, Antalya ve Gaziantep şubelerini de kapsayacak şekilde genişletilmiştir. Böylece daha fazla ilde Cumartesi ve Pazar günleri teslimat yapılabilmektedir.">
+                      <td>Hafta Sonu Teslimat Ağı Genişletildi</td>
+                      <td>30.09.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 8 — Öğrenci Gönderilerinde Özel Fiyatlar -->
+                    <tr data-ann-row
+                        data-id="ogrenci-gonderi-fiyatlari"
+                        data-title="Öğrenci Gönderilerinde Özel Fiyatlar"
+                        data-date="2025-08-10"
+                        data-status="Aktif"
+                        data-excerpt="Üniversite kayıt döneminde, öğrenci belgesini ibraz eden müşterilerimiz için şehirler arası gönderilerde indirimli fiyatlar sunulmaktadır."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#ogrenci-gonderi-fiyatlari"
+                        data-content="Üniversite kayıt döneminde, öğrenci belgesini ibraz eden müşterilerimiz için şehirler arası gönderilerde özel indirimli fiyatlar sunulmaktadır. Kampanya süresince belirlenen ağırlık ve hatlarda geçerli olan bu avantajla öğrencilerin taşınma sürecini kolaylaştırmayı hedefliyoruz.">
+                      <td>Öğrenci Gönderilerinde Özel Fiyatlar</td>
+                      <td>10.08.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 9 — Atlas Kargo Mobil Uygulaması Yayında -->
+                    <tr data-ann-row
+                        data-id="mobil-uygulama-yayinda"
+                        data-title="Atlas Kargo Mobil Uygulaması Yayında"
+                        data-date="2025-05-15"
+                        data-status="Aktif"
+                        data-excerpt="Gönderi oluşturma, takip ve şube arama işlemlerini tek ekrandan yapabileceğiniz mobil uygulamamız App Store ve Google Play’de yayınlanmıştır."
+                        data-button-text="Detayları Gör"
+                        data-button-link="announcements.html#mobil-uygulama-yayinda"
+                        data-content="Gönderi oluşturma, takip ve şube arama işlemlerini tek ekrandan yapabileceğiniz Atlas Kargo mobil uygulamamız App Store ve Google Play’de yayınlanmıştır. Uygulama üzerinden hızlıca gönderi oluşturabilir, kargo takibi yapabilir ve size en yakın şubeyi harita üzerinden görüntüleyebilirsiniz.">
+                      <td>Atlas Kargo Mobil Uygulaması Yayında</td>
+                      <td>15.05.2025</td>
+                      <td><span class="badge badge-success">Aktif</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-ann-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-ann-delete">Sil</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- SERVICES -->
+          <section id="panel-services" class="admin-panel">
+
+            <!-- homepage service cards -->
+            <div class="admin-card mb-4">
+              <h4>Hizmet Kartı (Anasayfa Kısa Kartlar)</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label>Hizmet Adı (Başlık)</label>
+                    <input type="text" class="form-control"
+                          id="service-card-name"
+                          placeholder="Örn. Kara Yolu Taşımacılığı">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Kısa Açıklama</label>
+                  <textarea class="form-control" rows="2"
+                            id="service-card-desc"
+                            placeholder="Kartın altında görünen 1–2 cümlelik açıklama"></textarea>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>İlgili Sayfa Linki</label>
+                    <input type="text" class="form-control"
+                          id="service-card-link"
+                          placeholder="services.html#kara-yolu">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>İkon Sınıfı (icomoon / flaticon)</label>
+                    <input type="text" class="form-control"
+                          id="service-card-icon"
+                          placeholder="flaticon-travel-1">
+                  </div>
+                </div>
+
+                  <button type="button" class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>
+
+              </form>
+            </div>
+
+
+            <!-- (services.html) cards -->
+            <div class="admin-card">
+              <h4>Detaylı Hizmet İçerikleri (services.html)</h4>
+
+              <form>
+                <div class="form-group">
+                  <label>Hizmet Adı (Başlık)</label>
+                  <input type="text" class="form-control"
+                        id="service-detail-name"
+                        placeholder="Örn. Kara Yolu Taşımacılığı ile Esnek ve Hızlı Çözümler">
+                </div>
+
+                <div class="form-group">
+                  <label>Kısa Giriş Metni</label>
+                  <textarea class="form-control" rows="3"
+                            id="service-detail-intro"
+                            placeholder="Müşterilerinize Türkiye’nin dört bir yanına güvenli ve zamanında kara yolu taşımacılığı sunun..."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Öne Çıkan Özellikler (Madde Madde)</label>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-2">
+                      <input type="text" class="form-control" id="service-feature-1"
+                            placeholder="Kapıdan kapıya teslimat">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <input type="text" class="form-control" id="service-feature-2"
+                            placeholder="Günlük sefer planları">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <input type="text" class="form-control" id="service-feature-3"
+                            placeholder="Gerçek zamanlı yük takibi">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Detaylı Açıklama Metni</label>
+                  <textarea class="form-control" rows="6"
+                            id="service-detail-body"
+                            placeholder="Hizmetin kapsamı, operasyon süreci, müşteri faydaları vb. detaylı açıklamaları buraya yazabilirsiniz."></textarea>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Sağ Taraftaki Görsel (Dosya Yolu)</label>
+                    <input type="text" class="form-control"
+                          id="service-detail-image"
+                          placeholder="images/cargo_sea_big.jpg">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Anchor ID (Bölüm Kimliği)</label>
+                    <input type="text" class="form-control"
+                          id="service-detail-anchor"
+                          placeholder="deniz-yolu">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Buton Metni (Varsa)</label>
+                    <input type="text" class="form-control"
+                          id="service-detail-btn-text"
+                          placeholder="Teklif Al">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Buton Linki</label>
+                    <input type="text" class="form-control"
+                          id="service-detail-btn-link"
+                          placeholder="index.html#contact-section">
+                  </div>
+                </div>
+
+                  <button type="button"
+                          class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button"
+                          class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>
+
+              </form>
+
+              <hr>
+
+              <h5>Mevcut Detaylı Hizmet İçerikleri</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Hizmet</th>
+                      <th>Anchor ID</th>
+                      <th>Görsel</th>
+                      <th>Durum</th>
+                      <th style="width: 120px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <!-- 1 — DENİZ YOLU -->
+                    <tr data-service-detail-row
+                        data-name="Deniz Yolu Taşımacılığı"
+                        data-anchor="deniz-yolu"
+                        data-image="images/cargo_sea_big.jpg"
+                        data-status="Yayında"
+
+                        data-intro="Uluslararası yüklerinizi güvenli, planlı ve uygun maliyetli deniz yolu çözümleriyle taşıyoruz."
+                        data-feature-1="FCL / LCL konteyner çözümleri"
+                        data-feature-2="Düzenli çıkış programları"
+                        data-feature-3="Gümrük ve dokümantasyon desteği"
+                        data-body="Deniz yolu taşımacılığı, yüksek hacimli ve nispeten düşük zaman baskısı olan yükler için en ekonomik çözümdür. Atlas Kargo olarak, geniş armatör ağımız ve güçlü acente yapımızla kapıdan kapıya taşımacılık hizmeti sunuyoruz. Rezervasyondan varışa kadar tüm süreci tek panelden takip edebilir, maliyetlerinizi öngörülebilir hale getirebilirsiniz."
+                        data-btn-text="Deniz Yolu Teklif Al"
+                        data-btn-link="index.html#contact-section"
+
+                        data-card-name="Deniz Yolu Taşımacılığı"
+                        data-card-desc="Uluslararası deniz taşımacılığında geniş acente ağımızla güvenli, ekonomik ve hızlı çözüm sunuyoruz."
+                        data-card-link="services.html#deniz-yolu"
+                        data-card-icon="flaticon-ferry">
+
+                      <td>Deniz Yolu Taşımacılığı</td>
+                      <td>deniz-yolu</td>
+                      <td>images/cargo_sea_big.jpg</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-service-detail-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-service-detail-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 2 — HAVA YOLU -->
+                    <tr data-service-detail-row
+                        data-name="Hava Yolu Taşımacılığı"
+                        data-anchor="hava-yolu"
+                        data-image="images/cargo_plane.jpg"
+                        data-status="Yayında"
+
+                        data-intro="Zaman kritik gönderileriniz için hızlı ve güvenilir hava yolu çözümleri sağlıyoruz."
+                        data-feature-1="Ekspres ve ekonomik seçenekler"
+                        data-feature-2="Kapıdan kapıya teslimat"
+                        data-feature-3="Online gönderi takibi"
+                        data-body="Hava yolu taşımacılığı; özellikle e-ticaret, yedek parça ve numune gönderilerinde hız avantajı sunar. Atlas Kargo, anlaşmalı havayolu şirketleri üzerinden farklı uçuş ve transit süreleriyle size esnek seçenekler sunar. Operasyonunuzu tek panelden yönetebilir, müşterilerinize hızlı teslimat garantisi sağlayabilirsiniz."
+                        data-btn-text="Hava Yolu Teklif Al"
+                        data-btn-link="index.html#contact-section"
+
+                        data-card-name="Hava Yolu Taşımacılığı"
+                        data-card-desc="Acil ve değerli gönderileriniz için hızlı, takip edilebilir ve güvenilir hava kargo hizmeti sağlıyoruz."
+                        data-card-link="services.html#hava-yolu"
+                        data-card-icon="flaticon-airplane">
+
+                      <td>Hava Yolu Taşımacılığı</td>
+                      <td>hava-yolu</td>
+                      <td>images/cargo_plane.jpg</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-service-detail-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-service-detail-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 3 — PAKET TAŞIMA & DAĞITIM -->
+                    <tr data-service-detail-row
+                        data-name="Paket Taşıma & Dağıtım"
+                        data-anchor="paket-dagitim"
+                        data-image="images/cargo_small.jpg"
+                        data-status="Yayında"
+
+                        data-intro="E-ticaret ve perakende odaklı, hızlı ve izlenebilir paket dağıtım hizmeti sunuyoruz."
+                        data-feature-1="Adresten alım ve adrese teslim"
+                        data-feature-2="SMS / e-posta bilgilendirme"
+                        data-feature-3="İade süreci entegrasyonu"
+                        data-body="Paket dağıtım hizmetimiz özellikle e-ticaret operasyonları için optimize edilmiştir. Siparişten teslimata kadar tüm adımlar takip edilebilir, müşterileriniz teslimat sürecinde şeffaf şekilde bilgilendirilir. Yoğun dönemlerde kapasite artırımı ile işletmenizi destekleriz."
+                        data-btn-text="Paket Hizmeti Teklif Al"
+                        data-btn-link="index.html#contact-section"
+
+                        data-card-name="Paket Taşıma & Dağıtım"
+                        data-card-desc="Şehir içi ve şehirler arası küçük paket gönderilerinizde kapıdan kapıya, hızlı ve güvenilir teslimat yapıyoruz."
+                        data-card-link="services.html#paket-dagitim"
+                        data-card-icon="flaticon-box">
+
+                      <td>Paket Taşıma & Dağıtım</td>
+                      <td>paket-dagitim</td>
+                      <td>images/cargo_small.jpg</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-service-detail-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-service-detail-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 4 — KARA YOLU -->
+                    <tr data-service-detail-row
+                        data-name="Kara Yolu Taşımacılığı"
+                        data-anchor="kara-yolu"
+                        data-image="images/cargo_truck.jpg"
+                        data-status="Yayında"
+
+                        data-intro="Türkiye ve çevre ülkelere kara yolu ile güvenli ve planlı taşımacılık çözümleri sunuyoruz."
+                        data-feature-1="Parsiyel ve komple araç seçenekleri"
+                        data-feature-2="Düzenli güzergahlar"
+                        data-feature-3="Isı kontrollü taşıma opsiyonları"
+                        data-body="Kara yolu taşımacılığı, uygun maliyeti ve kapıdan kapıya teslim avantajıyla en çok tercih edilen yöntemdir. Geniş araç filomuz ve güçlü operasyon kabiliyetimizle yüklerinizi zamanında teslim ediyoruz."
+                        data-btn-text="Kara Yolu Teklif Al"
+                        data-btn-link="index.html#contact-section"
+
+                        data-card-name="Kara Yolu Taşımacılığı"
+                        data-card-desc="Türkiye genelinde geniş araç filomuzla esnek, güvenli ve zamanında kara yolu taşımacılığı hizmeti sunuyoruz."
+                        data-card-link="services.html#kara-yolu"
+                        data-card-icon="flaticon-lorry">
+
+                      <td>Kara Yolu Taşımacılığı</td>
+                      <td>kara-yolu</td>
+                      <td>images/cargo_truck.jpg</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-service-detail-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-service-detail-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 5 — DEPOLAMA & ANTREPO -->
+                    <tr data-service-detail-row
+                        data-name="Depolama & Antrepo"
+                        data-anchor="depolama-antrepo"
+                        data-image="images/cargo_warehouse.jpg"
+                        data-status="Yayında"
+
+                        data-intro="Farklı sektörlere uygun esnek depolama ve stok yönetimi çözümleri sunuyoruz."
+                        data-feature-1="Adresli raf sistemleri"
+                        data-feature-2="Stok takibi ve raporlama"
+                        data-feature-3="Isı / nem kontrollü alanlar"
+                        data-body="Depolama hizmetimiz, ürünlerin güvenli ve izlenebilir bir şekilde saklanmasını sağlar. WMS altyapımız ile stoklarınızı anlık görüntüleyebilir, sevkiyat planlarını kolayca yönetebilirsiniz."
+                        data-btn-text="Depolama Teklif Al"
+                        data-btn-link="index.html#contact-section"
+
+                        data-card-name="Depolama & Antrepo"
+                        data-card-desc="Modern depolama alanlarımızda ürünlerinizi güvenli, kontrollü ve izlenebilir bir şekilde saklıyoruz."
+                        data-card-link="services.html#depolama-antrepo"
+                        data-card-icon="flaticon-warehouse">
+
+                      <td>Depolama & Antrepo</td>
+                      <td>depolama-antrepo</td>
+                      <td>images/cargo_warehouse.jpg</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-service-detail-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-service-detail-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <!-- 6 — EKSPRES TESLİMAT -->
+                    <tr data-service-detail-row
+                        data-name="Ekspres Teslimat"
+                        data-anchor="ekspres"
+                        data-image="images/cargo_fast.jpg"
+                        data-status="Yayında"
+
+                        data-intro="Acil gönderileriniz için gün içi ve ertesi gün teslimat çözümleri sunuyoruz."
+                        data-feature-1="Saatlik teslimat pencereleri"
+                        data-feature-2="Kuryeden teslim alma"
+                        data-feature-3="Öncelikli çağrı merkezi desteği"
+                        data-body="Ekspres teslimat hizmetimiz, zaman kritik tüm gönderiler için tasarlanmıştır. Şehir içi veya şehirler arası hızlı teslimat seçenekleri sunuyoruz."
+                        data-btn-text="Ekspres Gönderi Oluştur"
+                        data-btn-link="index.html#contact-section"
+
+                        data-card-name="Ekspres Teslimat"
+                        data-card-desc="Aynı gün ve ertesi gün teslimat seçenekleriyle hızlı ve güvenilir ekspres gönderi çözümleri sunuyoruz."
+                        data-card-link="services.html#ekspres"
+                        data-card-icon="flaticon-add">
+
+                      <td>Ekspres Teslimat</td>
+                      <td>ekspres</td>
+                      <td>images/cargo_fast.jpg</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-service-detail-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-service-detail-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+              </div>
+
+            </div>
+          </section>
+
+
+
+          <!-- BRANCHES -->
+          <section id="panel-branches" class="admin-panel">
+            <div class="admin-card mb-4">
+              <h4>Şube / Bölge Ekle-Düzenle</h4>
+              <form id="branch-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Adı</label>
+                    <input type="text" class="form-control" id="branch-name" placeholder="Örn. İstanbul Kadıköy Şubesi">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Şehir</label>
+                    <input type="text" class="form-control" id="branch-city" placeholder="İstanbul">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>İlçe</label>
+                    <input type="text" class="form-control" id="branch-district" placeholder="Kadıköy">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Adres</label>
+                  <textarea class="form-control" rows="2" id="branch-address" placeholder="Bahariye Cd. No:28, Kadıköy / İstanbul"></textarea>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Telefon</label>
+                    <input type="text" class="form-control" id="branch-phone" placeholder="+90 (216) 555 00 10">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Tür</label>
+                    <select class="form-control" id="branch-type">
+                      <option>Şube</option>
+                      <option>Bölge Müdürlüğü</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Kısa Konum Başlığı</label>
+                    <input type="text" class="form-control" id="branch-short" placeholder="Kadıköy / İstanbul">
+                  </div>
+                </div>
+
+                  <button type="button"
+                          class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button"
+                          class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>
+              </form>
+            </div>
+
+            <div class="admin-card">
+              <h5>Şubeler</h5>
+              <div class="table-responsive mb-4">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Ad</th>
+                      <th>Şehir</th>
+                      <th>İlçe</th>
+                      <th>Telefon</th>
+                      <th style="width: 120px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr data-branch-row
+                        data-name="İstanbul Avrupa Yakası Şubesi"
+                        data-city="İstanbul"
+                        data-district="Şişli"
+                        data-phone="+90 (212) 555 00 20"
+                        data-type="Şube"
+                        data-short="Şişli / İstanbul">
+                      <td>İstanbul Avrupa Yakası Şubesi</td>
+                      <td>İstanbul</td>
+                      <td>Şişli</td>
+                      <td>+90 (212) 555 00 20</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="İstanbul Kadıköy Şubesi"
+                        data-city="İstanbul"
+                        data-district="Kadıköy"
+                        data-phone="+90 (216) 555 00 10"
+                        data-type="Şube"
+                        data-short="Kadıköy / İstanbul">
+                      <td>İstanbul Kadıköy Şubesi</td>
+                      <td>İstanbul</td>
+                      <td>Kadıköy</td>
+                      <td>+90 (216) 555 00 10</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Ankara Kızılay Şubesi"
+                        data-city="Ankara"
+                        data-district="Çankaya"
+                        data-phone="+90 (312) 555 00 40"
+                        data-type="Şube"
+                        data-short="Çankaya / Ankara">
+                      <td>Ankara Kızılay Şubesi</td>
+                      <td>Ankara</td>
+                      <td>Çankaya</td>
+                      <td>+90 (312) 555 00 40</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="İzmir Konak Şubesi"
+                        data-city="İzmir"
+                        data-district="Konak"
+                        data-phone="+90 (232) 555 00 50"
+                        data-type="Şube"
+                        data-short="Konak / İzmir">
+                      <td>İzmir Konak Şubesi</td>
+                      <td>İzmir</td>
+                      <td>Konak</td>
+                      <td>+90 (232) 555 00 50</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Bursa Nilüfer Şubesi"
+                        data-city="Bursa"
+                        data-district="Nilüfer"
+                        data-phone="+90 (224) 555 00 60"
+                        data-type="Şube"
+                        data-short="Nilüfer / Bursa">
+                      <td>Bursa Nilüfer Şubesi</td>
+                      <td>Bursa</td>
+                      <td>Nilüfer</td>
+                      <td>+90 (224) 555 00 60</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Antalya Kepez Şubesi"
+                        data-city="Antalya"
+                        data-district="Kepez"
+                        data-phone="+90 (242) 555 00 70"
+                        data-type="Şube"
+                        data-short="Kepez / Antalya">
+                      <td>Antalya Kepez Şubesi</td>
+                      <td>Antalya</td>
+                      <td>Kepez</td>
+                      <td>+90 (242) 555 00 70</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Adana Seyhan Şubesi"
+                        data-city="Adana"
+                        data-district="Seyhan"
+                        data-phone="+90 (322) 555 00 80"
+                        data-type="Şube"
+                        data-short="Seyhan / Adana">
+                      <td>Adana Seyhan Şubesi</td>
+                      <td>Adana</td>
+                      <td>Seyhan</td>
+                      <td>+90 (322) 555 00 80</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Gaziantep Şehitkamil Şubesi"
+                        data-city="Gaziantep"
+                        data-district="Şehitkamil"
+                        data-phone="+90 (342) 555 00 90"
+                        data-type="Şube"
+                        data-short="Şehitkamil / Gaziantep">
+                      <td>Gaziantep Şehitkamil Şubesi</td>
+                      <td>Gaziantep</td>
+                      <td>Şehitkamil</td>
+                      <td>+90 (342) 555 00 90</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h5>Bölge Müdürlükleri</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Ad</th>
+                      <th>Şehir</th>
+                      <th>İlçe</th>
+                      <th>Telefon</th>
+                      <th style="width: 120px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-branch-row
+                        data-name="Marmara Bölge Müdürlüğü"
+                        data-city="İstanbul"
+                        data-district="Üsküdar"
+                        data-phone="+90 (216) 555 10 10"
+                        data-type="Bölge Müdürlüğü"
+                        data-short="Üsküdar / İstanbul">
+                      <td>Marmara Bölge Müdürlüğü</td>
+                      <td>İstanbul</td>
+                      <td>Üsküdar</td>
+                      <td>+90 (216) 555 10 10</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="İç Anadolu Bölge Müdürlüğü"
+                        data-city="Ankara"
+                        data-district="Çankaya"
+                        data-phone="+90 (312) 555 10 20"
+                        data-type="Bölge Müdürlüğü"
+                        data-short="Çankaya / Ankara">
+                      <td>İç Anadolu Bölge Müdürlüğü</td>
+                      <td>Ankara</td>
+                      <td>Çankaya</td>
+                      <td>+90 (312) 555 10 20</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Ege Bölge Müdürlüğü"
+                        data-city="İzmir"
+                        data-district="Bayraklı"
+                        data-phone="+90 (232) 555 10 30"
+                        data-type="Bölge Müdürlüğü"
+                        data-short="Bayraklı / İzmir">
+                      <td>Ege Bölge Müdürlüğü</td>
+                      <td>İzmir</td>
+                      <td>Bayraklı</td>
+                      <td>+90 (232) 555 10 30</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Akdeniz Bölge Müdürlüğü"
+                        data-city="Antalya"
+                        data-district="Kepez"
+                        data-phone="+90 (242) 555 10 40"
+                        data-type="Bölge Müdürlüğü"
+                        data-short="Kepez / Antalya">
+                      <td>Akdeniz Bölge Müdürlüğü</td>
+                      <td>Antalya</td>
+                      <td>Kepez</td>
+                      <td>+90 (242) 555 10 40</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-branch-row
+                        data-name="Karadeniz Bölge Müdürlüğü"
+                        data-city="Samsun"
+                        data-district="İlkadım"
+                        data-phone="+90 (362) 555 10 50"
+                        data-type="Bölge Müdürlüğü"
+                        data-short="İlkadım / Samsun">
+                      <td>Karadeniz Bölge Müdürlüğü</td>
+                      <td>Samsun</td>
+                      <td>İlkadım</td>
+                      <td>+90 (362) 555 10 50</td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-branch-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-branch-delete">Sil</button>
+                      </td>
+                    </tr>
+                  </tbody>                
+                </table>
+              </div>
+
+            </div>
+          </section>
+
+
+          <!-- BLOG -->
+          <section id="panel-blog" class="admin-panel">
+            <div class="admin-card mb-4">
+              <h4>Blog Yazısı Ekle-Düzenle</h4>
+              <form id="blog-form">
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label>Başlık</label>
+                    <input type="text" class="form-control" id="blog-title" placeholder="E-ticarette Kargo Süreçlerini İyileştirmenin 5 Yolu">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Tarih</label>
+                    <input type="date" class="form-control" id="blog-date">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Kısa Özet (Lead)</label>
+                  <textarea class="form-control" rows="2" id="blog-lead" placeholder="E-ticarette müşterinin gözünde “alışverişin bittiği yer” ödeme ekranı gibi görünse de..."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Hero Arkaplan Görseli</label>
+                  <input type="text" class="form-control" id="blog-hero" placeholder="Görselin dosya yolu. Örn: images/cargo_sea_big.jpg">
+                </div>
+
+                <div class="form-group">
+                  <label>Kategoriler</label>
+                  <input type="text" class="form-control" id="blog-categories" placeholder="E-ticaret, Lojistik">
+                  <small class="form-text text-muted">Kategorileri virgülle ayırın.</small>
+                </div>
+
+                <div class="form-group">
+                  <label>Etiketler</label>
+                  <input type="text" class="form-control" id="blog-tags" placeholder="#kargo, #müşterimemnuniyeti, #atlaskargo">
+                </div>
+
+                <div class="form-group">
+                  <label>İçerik (Özet / Body)</label>
+                  <textarea class="form-control" rows="6" id="blog-body" placeholder="Yazının gövde içeriği. HTML editor veya markdown entegrasyonu burada devreye girebilir."></textarea>
+                </div>
+
+                  <button type="button"
+                          class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button"
+                          class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>              
+                </form>
+            </div>
+
+            <div class="admin-card">
+              <h5>Yazı Listesi</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Başlık</th>
+                      <th>Tarih</th>
+                      <th>Kategori</th>
+                      <th>Durum</th>
+                      <th style="width: 120px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-blog-row
+                        data-title="Depolama Maliyetlerini Azaltmanın 3 Yolu"
+                        data-date="2025-10-01"
+                        data-category="Depolama"
+                        data-status="Taslak">
+                      <td>Depolama Maliyetlerini Azaltmanın 3 Yolu</td>
+                      <td>01.10.2025</td>
+                      <td>Depolama</td>
+                      <td><span class="badge badge-secondary">Taslak</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-blog-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-blog-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-blog-row
+                        data-title="Uluslararası Gönderilerde Gümrük Süreci Nasıl İşler"
+                        data-date="2025-06-19"
+                        data-category="E-ticart, Lojistik"
+                        data-status="Yayında">
+                      <td>Uluslararası Gönderilerde Gümrük Süreci Nasıl İşler</td>
+                      <td>19.06.2025</td>
+                      <td>E-ticart, Lojistik</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-blog-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-blog-delete">Sil</button>
+                      </td>
+                    </tr>
+
+                    <tr data-blog-row
+                        data-title="E-ticarette Kargo Süreçlerini İyileştirmenin 5 Yolu"
+                        data-date="2025-03-12"
+                        data-category="E-ticaret, Lojistik"
+                        data-status="Yayında">
+                      <td>E-ticarette Kargo Süreçlerini İyileştirmenin 5 Yolu</td>
+                      <td>12.03.2025</td>
+                      <td>E-ticaret, Lojistik</td>
+                      <td><span class="badge badge-success">Yayında</span></td>
+                      <td>
+                        <button class="btn btn-outline-primary btn-sm btn-blog-edit">Düzenle</button>
+                        <button class="btn btn-outline-danger btn-sm btn-blog-delete">Sil</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- CONTACTS -->
+          <section id="panel-messages" class="admin-panel">
+            <div class="row">
+
+              <!-- left -->
+              <div class="col-lg-5 mb-4">
+                <div class="admin-card">
+                  <h4>Gelen Mesajlar</h4>
+
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control form-control-sm"
+                           id="message-search"
+                           placeholder="İsim, e-posta veya konuya göre ara">
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="table table-sm admin-messages-table mb-0">
+                      <thead>
+                        <tr>
+                          <th>Gönderen</th>
+                          <th>Konu</th>
+                          <th>Tarih</th>
+                          <th style="width: 70px;">Durum</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr data-message-row
+                            data-name="Ali Kerem Kızılkaya"
+                            data-email="alikizilkaya@gmail.com"
+                            data-subject="Kargo takibi hakkında"
+                            data-message="Merhaba, gönderim 3 gündür aynı durumda görünüyor. Detaylı bilgi alabilir miyim?"
+                            data-date="06.12.2025"
+                            data-status="Yeni">
+                          <td>Ali Kerem Kızılkaya</td>
+                          <td>Kargo takibi hakkında</td>
+                          <td>06.12.2025</td>
+                          <td><span class="badge badge-danger">Yeni</span></td>
+                        </tr>
+
+                        <tr data-message-row
+                            data-name="Erdem Balcı"
+                            data-email="balci.erdem@gmail.com"
+                            data-subject="Kargo takibi hakkında"
+                            data-message="E-ticaret firmam için depolama hizmetinizden faydalanmak istiyorum. Detaylı bilgi alabilir miyim?"
+                            data-date="05.12.2025"
+                            data-status="Yeni">
+                          <td>Erdem Balcı</td>
+                          <td>Depolama hizmeti</td>
+                          <td>05.12.2025</td>
+                          <td><span class="badge badge-danger">Yeni</span></td>
+                        </tr>
+
+                        <tr data-message-row
+                            data-name="Begüm Zehra Mutlu"
+                            data-email="zehra_b.mutlu@gmail.com"
+                            data-subject="Hasarlı ürün bildirimi"
+                            data-message="Teslim aldığım pakette ürün hasarlıydı, süreç hakkında bilgi alabilir miyim?"
+                            data-date="01.12.2025"
+                            data-status="Okundu">
+                          <td>Begüm Zehra Mutlu</td>
+                          <td>Hasarlı ürün bildirimi</td>
+                          <td>01.12.2025</td>
+                          <td><span class="badge badge-warning">Okundu</span></td>
+                        </tr>
+
+                        <tr data-message-row
+                            data-name="Osman Uygun"
+                            data-email="ahmet.uygun@gmail.com"
+                            data-subject="Kurumsal fiyat teklifi"
+                            data-message="Şirketimiz için aylık ortalama 300 gönderi yapıyoruz, kurumsal teklif almak istiyoruz."
+                            data-date="30.11.2025"
+                            data-status="Yanıtlandı">
+                          <td>Osman Uygun</td>
+                          <td>Kurumsal fiyat teklifi</td>
+                          <td>30.11.2025</td>
+                          <td><span class="badge badge-success">Yanıtlandı</span></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="col-lg-7 mb-4">
+                <div class="admin-card" id="message-detail">
+                  <h4>Mesaj Detayı &amp; Cevap</h4>
+
+                  <p class="text-muted mb-3" id="message-empty-info">
+                    Soldan bir mesaj seçtiğinizde detayları burada göreceksiniz.
+                  </p>
+
+                  <form id="message-reply-form" style="display:none;">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Gönderen Adı</label>
+                        <input type="text" class="form-control form-control-sm"
+                               id="msg-name" readonly>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>E-posta</label>
+                        <input type="email" class="form-control form-control-sm"
+                               id="msg-email" readonly>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Konu</label>
+                      <input type="text" class="form-control form-control-sm"
+                             id="msg-subject" readonly>
+                    </div>
+
+                    <div class="form-group">
+                      <label>İletilen Mesaj</label>
+                      <textarea class="form-control form-control-sm" rows="4"
+                                id="msg-body" readonly></textarea>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label>Tarih</label>
+                        <input type="text" class="form-control form-control-sm"
+                               id="msg-date" readonly>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label>Durum</label>
+                        <select id="msg-status" class="form-control form-control-sm">
+                          <option value="Yeni">Yeni</option>
+                          <option value="Okundu">Okundu</option>
+                          <option value="Yanıtlandı">Yanıtlandı</option>
+                          <option value="Arşivlendi">Arşivlendi</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group">
+                      <label>Cevabınız</label>
+                      <textarea class="form-control" rows="4"
+                                id="msg-reply"
+                                placeholder="Müşteriye göndereceğiniz e-posta metnini buraya yazın."></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <button type="button"
+                              class="btn btn-outline-secondary btn-sm"
+                              id="msg-clear-reply">
+                        Cevabı Temizle
+                      </button>
+
+                      <button type="button"
+                              class="btn btn-primary btn-md"
+                              id="msg-send-reply">
+                        Cevabı Gönder
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- MISSION-VISION -->
+
+          <section id="panel-mission-vision" class="admin-panel">
+
+            <div class="admin-card mb-4">
+              <h4>Misyon &amp; Vizyon Düzenle</h4>
+
+              <form>
+
+                <div class="form-group">
+                  <label>Misyon Başlığı</label>
+                  <input type="text" class="form-control" id="ms-title" 
+                        placeholder="Misyonumuz">
+                </div>
+
+                <div class="form-group">
+                  <label>Misyon Metni</label>
+                  <textarea class="form-control" rows="5" id="ms-body"
+                            placeholder="Misyon açıklaması..."></textarea>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                  <label>Vizyon Başlığı</label>
+                  <input type="text" class="form-control" id="vs-title" 
+                        placeholder="Vizyonumuz">
+                </div>
+
+                <div class="form-group">
+                  <label>Vizyon Metni</label>
+                  <textarea class="form-control" rows="5" id="vs-body"
+                            placeholder="Vizyon açıklaması..."></textarea>
+                </div>
+
+                <button type="button" class="btn btn-primary admin-save-btn">Kaydet</button>
+
+              </form>
+            </div>
+
+          </section>
+
+
+          <!-- TEAM -->
+
+          <section id="panel-team" class="admin-panel">
+
+            <div class="admin-card mb-4">
+              <h4>Ekip Üyesi Ekle / Düzenle</h4>
+
+              <form>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Ad Soyad</label>
+                    <input type="text" class="form-control" id="team-name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Pozisyon</label>
+                    <input type="text" class="form-control" id="team-position">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Kısa Açıklama</label>
+                  <textarea class="form-control" rows="3" id="team-desc"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Profil Fotoğrafı (yol)</label>
+                  <input type="text" class="form-control" id="team-photo"
+                        placeholder="images/person_1.jpg">
+                </div>
+
+                  <button type="button"
+                          class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button"
+                          class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>
+              </form>
+            </div>
+
+            <div class="admin-card">
+              <h5>Mevcut Ekip Üyeleri</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Ad</th>
+                      <th>Pozisyon</th>
+                      <th>Fotoğraf</th>
+                      <th style="width:120px;"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="team-list">
+
+            <tr data-team-row
+                data-name="Ahmet Mert Yılmaz"
+                data-position="Kurucu Ortak"
+                data-desc="Uluslararası lojistik operasyonlarında 10+ yıllık deneyime sahip olan Yılmaz, Atlas Kargo’nun stratejik yönünü ve büyümesini yönetmektedir."
+                data-photo="images/person_1.jpg">
+              <td>Ahmet Mert Yılmaz</td>
+              <td>Kurucu Ortak</td>
+              <td>images/person_1.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-team-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-team-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-team-row
+                data-name="Bahar Karasu"
+                data-position="Kurucu Ortak"
+                data-desc="Tedarik zinciri yönetimi ve müşteri ilişkileri alanında uzman olan Karasu, operasyonel süreçlerin verimli şekilde yürütülmesini sağlar."
+                data-photo="images/person_2.jpg">
+              <td>Bahar Karasu</td>
+              <td>Kurucu Ortak</td>
+              <td>images/person_2.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-team-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-team-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-team-row
+                data-name="Burak Demir"
+                data-position="Operasyon Müdürü"
+                data-desc="Yurt içi ve yurt dışı gönderi süreçlerinin koordinasyonunu sağlayan Demir, operasyonların sorunsuz ilerlemesinden sorumludur."
+                data-photo="images/person_3.jpg">
+              <td>Burak Demir</td>
+              <td>Operasyon Müdürü</td>
+              <td>images/person_3.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-team-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-team-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-team-row
+                data-name="Elif Zeynep Çetin"
+                data-position="Finans Müdürü"
+                data-desc="Atlas Kargo’nun finansal planlama, maliyet optimizasyonu ve bütçe süreçlerini yöneten Çetin, şirketin mali sürdürülebilirliğini sağlar."
+                data-photo="images/person_4.jpg">
+              <td>Elif Zeynep Çetin</td>
+              <td>Finans Müdürü</td>
+              <td>images/person_4.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-team-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-team-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-team-row
+                data-name="Hasan Aktoprak"
+                data-position="Araç Filosu Sorumlusu"
+                data-desc="Teslimat araçlarının planlanması, bakımı ve rota yönetimini koordine eden Aktoprak, tüm taşıma ağının verimli çalışmasını sağlar."
+                data-photo="images/person_5.jpg">
+              <td>Hasan Aktoprak</td>
+              <td>Araç Filosu Sorumlusu</td>
+              <td>images/person_5.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-team-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-team-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-team-row
+                data-name="Tuğba Nur Erçil"
+                data-position="Paket ve Depo Sorumlusu"
+                data-desc="Depo süreçleri, paket kabul, barkodlama ve yükleme aşamalarını yöneten Erçil, gönderilerin güvenle işlenmesini sağlar."
+                data-photo="images/person_6.jpg">
+              <td>Tuğba Nur Erçil</td>
+              <td>Paket ve Depo Sorumlusu</td>
+              <td>images/person_6.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-team-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-team-delete">Sil</button>
+              </td>
+            </tr>
+
+          </tbody>
+                </table>
+              </div>
+            </div>
+
+          </section>
+
+
+          <!-- SSS -->
+
+          <section id="panel-faq" class="admin-panel">
+
+            <div class="admin-card mb-4">
+              <h4>SSS Soru &amp; Cevap Düzenle</h4>
+
+              <form>
+                <div class="form-group">
+                  <label>Soru</label>
+                  <input type="text" class="form-control" id="faq-question"
+                        placeholder="Kargo takibini nasıl yapabilirim?">
+                </div>
+
+                <div class="form-group">
+                  <label>Cevap</label>
+                  <textarea class="form-control" rows="4" id="faq-answer"></textarea>
+                </div>
+
+                  <button type="button"
+                          class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button"
+                          class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>              
+                </form>
+            </div>
+
+            <div class="admin-card">
+              <h5>Mevcut SSS</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Soru</th>
+                      <th style="width:120px;"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="faq-list">
+
+            <tr data-faq-row
+                data-question="Kargomun tahmini teslim süresi nedir?"
+                data-answer="Teslimat süresi gönderinin çıkış ve varış noktalarına, seçtiğiniz hizmet tipine ve yoğunluk durumuna göre değişir. Şehir içi gönderiler genellikle 1 iş günü, şehirler arası gönderiler ise 1–3 iş günü içinde teslim edilir.">
+              <td>Kargomun tahmini teslim süresi nedir?</td>
+              <td style="width:120px;">
+                <button class="btn btn-outline-primary btn-sm btn-faq-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-faq-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-faq-row
+                data-question="Kargo takibini nasıl yapabilirim?"
+                data-answer="Size iletilen takip numarasını ana sayfadaki “Kargo Takip” alanına girerek gönderinizin anlık durumunu sorgulayabilirsiniz.">
+              <td>Kargo takibini nasıl yapabilirim?</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-faq-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-faq-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-faq-row
+                data-question="Yurt dışına gönderim yapıyor musunuz?"
+                data-answer="Evet. Avrupa, Asya, Kuzey Amerika ve Orta Doğu dahil birçok ülkeye hava ve deniz yolu taşımacılığı ile gönderi hizmeti sunuyoruz.">
+              <td>Yurt dışına gönderim yapıyor musunuz?</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-faq-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-faq-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-faq-row
+                data-question="Gönderi ağırlığı ve boyut nasıl hesaplanır?"
+                data-answer="Ücretlendirme, gerçek ağırlık ile hacimsel ağırlık karşılaştırılarak yüksek olan değer üzerinden yapılır. Hacimsel ağırlık = En × Boy × Yükseklik / 5000 formülüyle hesaplanır.">
+              <td>Gönderi ağırlığı ve boyut nasıl hesaplanır?</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-faq-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-faq-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-faq-row
+                data-question="Gönderimi kapıdan alıyor musunuz?"
+                data-answer="Hızlı Teslimat ve Kurumsal paketlerde kapıdan gönderi alım hizmeti sunuyoruz. Standart paketlerde ise ek hizmet olarak alınabilir.">
+              <td>Gönderimi kapıdan alıyor musunuz?</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-faq-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-faq-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-faq-row
+                data-question="Ödeme yöntemleri nelerdir?"
+                data-answer="Kredi kartı, banka kartı, kapıda ödeme ve şirketlere özel aylık faturalandırma seçenekleri sunuyoruz.">
+              <td>Ödeme yöntemleri nelerdir?</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-faq-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-faq-delete">Sil</button>
+              </td>
+            </tr>
+
+          </tbody>
+
+
+                </table>
+              </div>
+            </div>
+
+          </section>
+
+
+          <!-- TESTIMOANIALS -->
+
+          <section id="panel-testimonials" class="admin-panel">
+
+            <div class="admin-card mb-4">
+              <h4>Müşteri Yorumu Ekle / Düzenle</h4>
+
+              <form>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Ad Soyad</label>
+                    <input type="text" class="form-control" id="testi-name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Rol / Ünvan</label>
+                    <input type="text" class="form-control" id="testi-role"
+                          placeholder="E-ticaret İşletmesi Sahibi">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Yorum</label>
+                  <textarea class="form-control" rows="4" id="testi-comment"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Fotoğraf (yol)</label>
+                  <input type="text" class="form-control" id="testi-photo"
+                        placeholder="images/person_4.jpg">
+                </div>
+
+                  <button type="button"
+                          class="btn btn-primary btn-md admin-save-btn">
+                    Kaydet
+                  </button>
+                  <button type="button"
+                          class="btn btn-secondary btn-md admin-clear-form">
+                    Formu Temizle
+                  </button>              
+                </form>
+            </div>
+
+
+            <div class="admin-card">
+              <h5>Mevcut Yorumlar</h5>
+
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>Ad</th>
+                      <th>Ünvan</th>
+                      <th>Foto</th>
+                      <th style="width:120px;"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="testimonials-list">
+
+            <tr data-testimonial-row
+                data-name="Emre Kaya"
+                data-role="E-ticaret İşletmesi Sahibi"
+                data-comment="Atlas Kargo ile çalışmaya başladığımızdan beri teslimat sürelerimiz ciddi şekilde kısaldı. Canlı takip ekranı sayesinde gönderilerimizi anlık olarak izleyebiliyoruz."
+                data-photo="images/person_5.jpg">
+              <td>Emre Kaya</td>
+              <td>E-ticaret İşletmesi Sahibi</td>
+              <td>images/person_5.jpg</td>
+              <td style="width:120px;">
+                <button class="btn btn-outline-primary btn-sm btn-testimonial-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-testimonial-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-testimonial-row
+                data-name="Selin Arslan"
+                data-role="İhracat Sorumlusu"
+                data-comment="Yurt dışı gönderilerimizde hem fiyat hem hız açısından çok memnunuz. Gümrük sürecinde de bizi yönlendirmeleri işimizi kolaylaştırıyor. Kurumsal olarak gözü kapalı güveniyoruz."
+                data-photo="images/person_4.jpg">
+              <td>Selin Arslan</td>
+              <td>İhracat Sorumlusu</td>
+              <td>images/person_4.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-testimonial-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-testimonial-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-testimonial-row
+                data-name="Gizem Kurt"
+                data-role="Bireysel Müşteri"
+                data-comment="Online siparişlerimin teslimatında hiçbir gecikme yaşamadım. Paketleme özenliydi ve teslimat öncesi bilgilendirme mesajları gerçekten çok yardımcı oluyor."
+                data-photo="images/person_2.jpg">
+              <td>Gizem Kurt</td>
+              <td>Bireysel Müşteri</td>
+              <td>images/person_2.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-testimonial-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-testimonial-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-testimonial-row
+                data-name="Burcu Yıldız"
+                data-role="Mağaza Zinciri Müdürü"
+                data-comment="Şehir içi ekspres teslimatlarda saatlere göre planlama yapabilmemiz bizim için büyük avantaj. Atlas Kargo ekibi her zaman ulaşılabilir ve çözüm odaklı."
+                data-photo="images/person_6.jpg">
+              <td>Burcu Yıldız</td>
+              <td>Mağaza Zinciri Müdürü</td>
+              <td>images/person_6.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-testimonial-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-testimonial-delete">Sil</button>
+              </td>
+            </tr>
+
+            <tr data-testimonial-row
+                data-name="Ahmet Demir"
+                data-role="KOBİ Sahibi"
+                data-comment="Bireysel gönderilerimde de kurumsal gönderilerimde de aynı özeni göstermeleri güven veriyor. Teslimat bildirimleri sayesinde müşterilerimizi rahatça bilgilendirebiliyoruz."
+                data-photo="images/person_1.jpg">
+              <td>Ahmet Demir</td>
+              <td>KOBİ Sahibi</td>
+              <td>images/person_1.jpg</td>
+              <td>
+                <button class="btn btn-outline-primary btn-sm btn-testimonial-edit">Düzenle</button>
+                <button class="btn btn-outline-danger btn-sm btn-testimonial-delete">Sil</button>
+              </td>
+            </tr>
+
+          </tbody>
+                </table>
+              </div>
+            </div>
+
+          </section>
+        
+
+        </div>
+      </main>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+
+  </body>
+</html>
