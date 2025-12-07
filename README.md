@@ -73,27 +73,27 @@ https://drive.google.com/file/d/1wyMhG5v6H7i2VCCcEKIVzdraurQco8Wm/view?usp=shari
 
 ## 🧱 Proje Yapısı
 
-/ (root)
-│ index.html
+```
+/
+├── css/
+├── fonts/
+├── images/
+├── js/
+└── scss/
 │ admin.html
-│ /css
-│ /js
-│ /images
-│ /fonts
+| announcements.html
+│ branches.html
+| index.html
+| mission-vision.html
+| services.html
+| single.html
 │ README.md
+
+```
+
 
 ---
 
 ## 🎯 Projenin Amacı
 
 Bu proje, hazır bir web şablonunun profesyonel bir senaryo doğrultusunda nasıl özelleştirilebileceğini, bilgi mimarisinin nasıl oluşturulacağını ve bir admin panel konseptinin nasıl tasarlanacağını uygulamalı şekilde göstermektedir.
-
----
-
-## 📘 Şablon Kaynağı
-
-Cargo Template – Themewagon / Free-Template.co  
-https://themewagon.github.io/cargo/index.html
-
-## 🧱 Proje Yapısı
-
