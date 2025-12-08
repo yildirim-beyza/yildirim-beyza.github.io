@@ -297,7 +297,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label>İçerik (Özet / Detay)</label>
+                  <label>İçerik</label>
                   <textarea id="announcement-content" class="form-control" rows="4"
                             placeholder="Duyurunun detay metni."></textarea>
                 </div>
@@ -556,11 +556,16 @@
                           placeholder="services.html#kara-yolu">
                   </div>
                   <div class="form-group col-md-6">
-                    <label>İkon Sınıfı (icomoon / flaticon)</label>
-                    <input type="text" class="form-control"
+                    <label>İkon Görseli</label>
+                    <input type="file"
+                          class="form-control"
                           id="service-card-icon"
-                          placeholder="flaticon-travel-1">
+                          accept="image/*">
+                    <small class="form-text text-muted">
+                      Sadece görsel dosyaları (JPG, PNG, WebP vb.) yükleyin.
+                    </small>
                   </div>
+
                 </div>
 
                   <button type="button" class="btn btn-primary btn-md admin-save-btn">
@@ -619,12 +624,18 @@
                 </div>
 
                 <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label>Sağ Taraftaki Görsel (Dosya Yolu)</label>
-                    <input type="text" class="form-control"
-                          id="service-detail-image"
-                          placeholder="images/cargo_sea_big.jpg">
-                  </div>
+                    <div class="form-group col-md-6">
+                      <label>Sağ Taraftaki Görsel</label>
+                      <input type="file"
+                            class="form-control"
+                            id="service-detail-image"
+                            accept="image/*">
+                      <small class="form-text text-muted">
+                        Sağ tarafta görünecek görseli seçin (JPG, PNG, WebP vb.).
+                      </small>
+                    </div>
+
+                  
                   <div class="form-group col-md-6">
                     <label>Anchor ID (Bölüm Kimliği)</label>
                     <input type="text" class="form-control"
@@ -635,7 +646,7 @@
 
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label>Buton Metni (Varsa)</label>
+                    <label>Buton Metni</label>
                     <input type="text" class="form-control"
                           id="service-detail-btn-text"
                           placeholder="Teklif Al">
@@ -1195,13 +1206,19 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Kısa Özet (Lead)</label>
+                  <label>Kısa Özet</label>
                   <textarea class="form-control" rows="2" id="blog-lead" placeholder="E-ticarette müşterinin gözünde “alışverişin bittiği yer” ödeme ekranı gibi görünse de..."></textarea>
                 </div>
 
                 <div class="form-group">
                   <label>Hero Arkaplan Görseli</label>
-                  <input type="text" class="form-control" id="blog-hero" placeholder="Görselin dosya yolu. Örn: images/cargo_sea_big.jpg">
+                  <input type="file"
+                        class="form-control"
+                        id="blog-hero"
+                        accept="image/*">
+                  <small class="form-text text-muted">
+                    Sadece görsel dosyası seçebilirsiniz (JPG, PNG, WebP vb.).
+                  </small>
                 </div>
 
                 <div class="form-group">
@@ -1216,7 +1233,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label>İçerik (Özet / Body)</label>
+                  <label>İçerik (Detay)</label>
                   <textarea class="form-control" rows="6" id="blog-body" placeholder="Yazının gövde içeriği."></textarea>
                 </div>
 
@@ -1531,10 +1548,16 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Profil Fotoğrafı (yol)</label>
-                  <input type="text" class="form-control" id="team-photo"
-                        placeholder="images/person_1.jpg">
+                  <label>Profil Fotoğrafı</label>
+                  <input type="file"
+                        class="form-control"
+                        id="team-photo"
+                        accept="image/*">
+                  <small class="form-text text-muted">
+                    Sadece görsel dosyası seçin (JPG, PNG, WebP vb.).
+                  </small>
                 </div>
+
 
                   <button type="button"
                           class="btn btn-primary btn-md admin-save-btn">
@@ -1794,10 +1817,17 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Fotoğraf (yol)</label>
-                  <input type="text" class="form-control" id="testi-photo"
-                        placeholder="images/person_4.jpg">
+                <div class="form-group">
+                  <label>Fotoğraf</label>
+                  <input type="file"
+                        class="form-control"
+                        id="testi-photo"
+                        accept="image/*">
+                  <small class="form-text text-muted">
+                    Sadece görsel dosyası seçin (JPG, PNG, WebP vb.).
+                  </small>
                 </div>
+
 
                   <button type="button"
                           class="btn btn-primary btn-md admin-save-btn">
