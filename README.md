@@ -66,9 +66,6 @@ https://yildirim-beyza.github.io/
 **🛠️ Admin Paneli:**  
 https://yildirim-beyza.github.io/admin
 
-**📦 Proje Dosyaları (Drive):**  
-https://drive.google.com/file/d/1wyMhG5v6H7i2VCCcEKIVzdraurQco8Wm/view?usp=sharing
-
 ---
 
 ## 🧱 Proje Yapısı
